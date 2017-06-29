@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cracow Tour Guide App</string>
+    <string name="activity_restaurants">Restaurants</string>
+    <string name="activity_museums">Museums</string>
+    <string name="activity_monuments">Monuments</string>
+    <string name="activity_night_live">Night life</string>
+</resources>
