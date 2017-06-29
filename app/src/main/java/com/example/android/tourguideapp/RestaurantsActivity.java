@@ -18,6 +18,7 @@ public class RestaurantsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.object_list);
+
     final ArrayList<Object> objects = new ArrayList<Object>();
         objects.add(new Object("Starka", "Jozefa 14", "12 AM - 11:00 PM"));
         objects.add(new Object("Stylowa", "Centrum C3", "09:00 AM- 23:00 PM"));

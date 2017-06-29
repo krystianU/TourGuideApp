@@ -28,7 +28,9 @@ public class NightLifeActivity extends AppCompatActivity {
         objects.add(new Object("Alternatywy Club", "Maly Rynek 4", "6:00 PM - 2:00 AM"));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
+
         ListView listView = (ListView) findViewById(R.id.list);
+
         listView.setAdapter(adapter);
     }
 }

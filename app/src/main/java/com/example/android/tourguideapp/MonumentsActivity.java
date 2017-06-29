@@ -28,7 +28,9 @@ public class MonumentsActivity extends AppCompatActivity {
         objects.add(new Object("Monument of an abecedarian", "Maly Rynek", "All hours", R.drawable.photo_abecedarian));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
+
         ListView listView = (ListView) findViewById(R.id.list);
+
         listView.setAdapter(adapter);
     }
 }

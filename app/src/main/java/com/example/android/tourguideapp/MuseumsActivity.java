@@ -27,7 +27,9 @@ public class MuseumsActivity extends AppCompatActivity {
         objects.add(new Object("National Museum", "3 maja 1", "10:00 AM - 6:00 PM"));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
+
         ListView listView = (ListView) findViewById(R.id.list);
+
         listView.setAdapter(adapter);
     }
 

@@ -2,62 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan_background"
     android:gravity="center"
-    android:orientation="vertical"
-    android:background="@color/tan_background">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/text_view_restaurants"
         android:layout_width="@dimen/main_activity_tile_min_width"
         android:layout_height="@dimen/main_activity_tile_min_height"
+        android:layout_margin="12dp"
+        android:background="@color/tile_background"
+        android:gravity="center_vertical"
         android:text="@string/activity_restaurants"
         android:textAlignment="center"
-        android:gravity="center_vertical"
         android:textColor="@color/words_categories_color"
-        android:textSize="@dimen/main_activity_tile_word"
-        android:background="@color/tile_background"
-        android:layout_margin="12dp"
+        android:textSize="@dimen/main_activity_tile_word"/>
 
-     />
     <TextView
         android:id="@+id/text_view_museums"
         android:layout_width="@dimen/main_activity_tile_min_width"
         android:layout_height="@dimen/main_activity_tile_min_height"
+        android:layout_margin="12dp"
+        android:background="@color/tile_background"
+        android:gravity="center_vertical"
         android:text="@string/activity_museums"
         android:textAlignment="center"
-        android:gravity="center_vertical"
         android:textColor="@color/words_categories_color"
-        android:textSize="@dimen/main_activity_tile_word"
-        android:background="@color/tile_background"
-        android:layout_margin="12dp"
+        android:textSize="@dimen/main_activity_tile_word"/>
 
-        />
     <TextView
         android:id="@+id/text_view_monuments"
         android:layout_width="@dimen/main_activity_tile_min_width"
         android:layout_height="@dimen/main_activity_tile_min_height"
+        android:layout_margin="12dp"
+        android:background="@color/tile_background"
+        android:gravity="center_vertical"
         android:text="@string/activity_monuments"
         android:textAlignment="center"
-        android:gravity="center_vertical"
         android:textColor="@color/words_categories_color"
-        android:textSize="@dimen/main_activity_tile_word"
-        android:background="@color/tile_background"
-        android:layout_margin="12dp"
+        android:textSize="@dimen/main_activity_tile_word"/>
 
-        />
     <TextView
         android:id="@+id/text_view_night_life"
         android:layout_width="@dimen/main_activity_tile_min_width"
         android:layout_height="@dimen/main_activity_tile_min_height"
+        android:layout_margin="12dp"
+        android:background="@color/tile_background"
+        android:gravity="center_vertical"
         android:text="@string/activity_night_live"
         android:textAlignment="center"
-        android:gravity="center_vertical"
         android:textColor="@color/words_categories_color"
-        android:textSize="@dimen/main_activity_tile_word"
-        android:background="@color/tile_background"
-        android:layout_margin="12dp"
-
-        />
+        android:textSize="@dimen/main_activity_tile_word"/>
 
 
 </LinearLayout>
