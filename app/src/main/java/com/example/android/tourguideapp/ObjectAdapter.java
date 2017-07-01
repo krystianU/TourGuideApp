@@ -20,17 +20,15 @@ public class ObjectAdapter extends ArrayAdapter<Object> {
 
 
     public ObjectAdapter(Activity context, ArrayList<Object> objects) {
-
         super(context, 0, objects);
-
     }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.content_list, parent, false);
-
         }
 
         Object currentObject = getItem(position);
@@ -45,17 +43,12 @@ public class ObjectAdapter extends ArrayAdapter<Object> {
         objectInfo1.setText(currentObject.getObjectInfo1());
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
-        if (currentObject.hasImage()){
+        if (currentObject.hasImage()) {
             imageView.setImageResource((currentObject.getImageResourceId()));
             imageView.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imageView.setVisibility(View.GONE);
         }
-
-
         return listItemView;
-
-
-
     }
 }

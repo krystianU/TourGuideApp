@@ -30,11 +30,7 @@ public class RestaurantsActivity extends AppCompatActivity {
         objects.add(new Object(getString(R.string.restaurants_object_8_name), getString(R.string.restaurants_object_8_street), getString(R.string.restaurants_object_8_info)));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
-
         ListView listView = (ListView) findViewById(R.id.list);
-
         listView.setAdapter(adapter);
-
-
     }
 }

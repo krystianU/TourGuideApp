@@ -16,6 +16,7 @@ public class MuseumsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.object_list);
+
         final ArrayList<Object> objects = new ArrayList<Object>();
         objects.add(new Object(getString(R.string.museums_object_1_name),getString(R.string.museums_object_1_street), getString(R.string.museums_object_1_info)));
         objects.add(new Object(getString(R.string.museums_object_2_name),getString(R.string.museums_object_2_street), getString(R.string.museums_object_2_info)));
@@ -27,10 +28,7 @@ public class MuseumsActivity extends AppCompatActivity {
         objects.add(new Object(getString(R.string.museums_object_8_name),getString(R.string.museums_object_8_street), getString(R.string.museums_object_8_info)));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
-
         ListView listView = (ListView) findViewById(R.id.list);
-
         listView.setAdapter(adapter);
     }
-
 }

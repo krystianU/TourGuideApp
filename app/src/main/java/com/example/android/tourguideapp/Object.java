@@ -17,15 +17,16 @@ public class Object {
         mObjectStreet = objectStreet;
         mObjectInfo1 = objectInfo1;
     }
+
     public Object(String objectName, String objectStreet, String objectInfo1, Integer imageResourceId) {
         mObjectName = objectName;
         mObjectStreet = objectStreet;
         mObjectInfo1 = objectInfo1;
         mImageResourceId = imageResourceId;
     }
+
     public String getObjectName(){
         return mObjectName;
-
     }
     public String getObjectStreet(){
         return mObjectStreet;
@@ -35,5 +36,4 @@ public class Object {
     }
     public boolean hasImage(){return mImageResourceId != NO_IMAGE_PROVIDED;}
     public Integer getImageResourceId(){return mImageResourceId;}
-
 }

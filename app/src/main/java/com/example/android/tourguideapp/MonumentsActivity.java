@@ -28,9 +28,7 @@ public class MonumentsActivity extends AppCompatActivity {
         objects.add(new Object(getString(R.string.monuments_object_8_name), getString(R.string.monuments_object_8_street), getString(R.string.monuments_object_8_info), R.drawable.photo_abecedarian));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
-
         ListView listView = (ListView) findViewById(R.id.list);
-
         listView.setAdapter(adapter);
     }
 }
