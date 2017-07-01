@@ -18,14 +18,14 @@ public class NightLifeActivity extends AppCompatActivity {
         setContentView(R.layout.object_list);
 
         ArrayList<Object> objects = new ArrayList<Object>();
-        objects.add(new Object("Wodka Cafe Bar", "Mikolajska 5", "1:00 PM - Last client"));
-        objects.add(new Object("Cafe Philo", "Sw. Tomasza 30", "All hours"));
-        objects.add(new Object("House of Beer", "Sw. Tomasza 35", "2:00 PM - 2:00 AM"));
-        objects.add(new Object("Alchemia", "Estery 5", "8:00 AM - 11:00 PM"));
-        objects.add(new Object("Mercy Brown Dive Bar", "Floriana Straszewskiego 28", "7:00 PM - 2:00 AM"));
-        objects.add(new Object("Frantic Club", "Szewska 5", "10:00 PM - 5:00 AM"));
-        objects.add(new Object("Shakers Club", "Szewska 5", "10:00 PM - 03:00 AM"));
-        objects.add(new Object("Alternatywy Club", "Maly Rynek 4", "6:00 PM - 2:00 AM"));
+        objects.add(new Object(getString(R.string.night_live_object_1_name), getString(R.string.night_live_object_1_street), getString(R.string.night_live_object_1_info)));
+        objects.add(new Object(getString(R.string.night_live_object_2_name), getString(R.string.night_live_object_2_street), getString(R.string.night_live_object_2_info)));
+        objects.add(new Object(getString(R.string.night_live_object_3_name), getString(R.string.night_live_object_3_street), getString(R.string.night_live_object_3_info)));
+        objects.add(new Object(getString(R.string.night_live_object_4_name), getString(R.string.night_live_object_4_street), getString(R.string.night_live_object_4_info)));
+        objects.add(new Object(getString(R.string.night_live_object_5_name), getString(R.string.night_live_object_5_street), getString(R.string.night_live_object_5_info)));
+        objects.add(new Object(getString(R.string.night_live_object_6_name), getString(R.string.night_live_object_6_street), getString(R.string.night_live_object_6_info)));
+        objects.add(new Object(getString(R.string.night_live_object_7_name), getString(R.string.night_live_object_7_street), getString(R.string.night_live_object_7_info)));
+        objects.add(new Object(getString(R.string.night_live_object_8_name), getString(R.string.night_live_object_8_street), getString(R.string.night_live_object_8_info)));
 
         ObjectAdapter adapter = new ObjectAdapter(this, objects);
 
